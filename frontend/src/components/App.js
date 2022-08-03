@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
+
 function App() {
   return (
     <div className='App'>
-      <h1>Dish Poll</h1>
+      <Link to={'/list'}>Start Voting</Link>
+      <Link to={'/list/results'}>Show Result</Link>
     </div>
   )
 }
