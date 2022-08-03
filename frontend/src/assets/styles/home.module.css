@@ -1,0 +1,41 @@
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.button {
+  padding: 1em;
+  color: #fff;
+  border-radius: 1em;
+}
+
+.results {
+  background-color: #59ce8f;
+  color: #1a4d2e;
+}
+
+.showDishes {
+  background-color: #187498;
+}
+
+.welcomeText {
+  font-family: monospace, Courier;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.cursor {
+  font-size: 1.5em;
+  animation: blink infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
