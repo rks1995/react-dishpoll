@@ -24,18 +24,8 @@
   font-family: monospace, Courier;
   font-size: 1.5em;
   font-weight: 500;
+  color: #fff;
 }
 .cursor {
   font-size: 1.5em;
-  animation: blink infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
 }

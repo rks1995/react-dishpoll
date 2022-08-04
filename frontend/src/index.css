@@ -12,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #5b7db1, #5f939a);
 }
 
 code {
@@ -21,4 +22,8 @@ code {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

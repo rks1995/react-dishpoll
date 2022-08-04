@@ -1,0 +1,61 @@
+.backBtn {
+  position: relative;
+  top: 2em;
+  left: 10em;
+  color: #c3c3c3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .backBtn {
+    left: 1em;
+  }
+}
+
+.backBtn:hover {
+  color: #2c3333;
+}
+
+.dishItem {
+  padding: 1em;
+  border-radius: 1em;
+  margin-top: 1em;
+  background-color: #f1f1f1;
+  box-shadow: 1px 1px 10px #c3c3c3;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dishItem:hover {
+  transform: scale(1.05);
+}
+.dishItem img {
+  width: 100%;
+  border-radius: 1em;
+}
+.dishItem h1 {
+  font-size: 1.25em;
+  text-align: center;
+  margin: 10px 0;
+}
+.dishItem p {
+  color: #2c3333;
+  font-size: 0.9em;
+}
+
+.rankContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.rankContainer .rank {
+  padding: 10px 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+}
+.rank:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
