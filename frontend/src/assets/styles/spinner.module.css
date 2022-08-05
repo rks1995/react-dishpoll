@@ -1,0 +1,27 @@
+.outer {
+  width: 150px;
+  margin: 10em auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #0f0e0e;
+  border-top: 4px solid #c3c3c3;
+  animation: spin linear infinite 1.3s;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
