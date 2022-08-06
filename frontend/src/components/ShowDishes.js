@@ -21,7 +21,9 @@ const ShowDishes = () => {
         'https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json'
       )
       setDishes(response.data)
-      localStorage.setItem('itemList', JSON.stringify(response.data)) // itemList will contain list of dishes with corresponding rank
+      if (!localStorage.getItem('itemList')) {
+        localStorage.setItem('itemList', JSON.stringify(response.data)) // itemList will contain list of dishes with corresponding rank
+      }
       setTimeout(() => {
         setLoading(false)
       }, 500)
