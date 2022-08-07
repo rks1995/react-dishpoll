@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom'
 import { HomeWrapper } from '../assets/Wrappers/HomeWrapper'
 import styles from '../assets/styles/home.module.css'
 import Typewriter from 'typewriter-effect'
-
+import { Navbar } from './'
 function DashBoard() {
   return (
     <div className='App'>
+      <Navbar />
       <HomeWrapper>
         <div className={styles.links}>
           <Link
