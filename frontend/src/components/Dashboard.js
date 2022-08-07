@@ -3,7 +3,7 @@ import { HomeWrapper } from '../assets/Wrappers/HomeWrapper'
 import styles from '../assets/styles/home.module.css'
 import Typewriter from 'typewriter-effect'
 
-function App() {
+function DashBoard() {
   return (
     <div className='App'>
       <HomeWrapper>
@@ -42,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default DashBoard

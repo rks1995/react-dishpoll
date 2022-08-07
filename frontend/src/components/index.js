@@ -1,5 +1,6 @@
-import App from './App'
-import Results from './Results'
+import Login from './Login'
+import DashBoard from './Dashboard'
 import ShowDishes from './ShowDishes'
+import Results from './Results'
 
-export { App, Results, ShowDishes }
+export { Login, DashBoard, Results, ShowDishes }

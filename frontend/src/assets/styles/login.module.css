@@ -1,0 +1,14 @@
+.inputField,
+.loginBtn {
+  width: 100%;
+  padding: 10px;
+  margin: 1em 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.loginBtn {
+  background-color: #3b9ae1;
+  color: #fff;
+  cursor: pointer;
+}

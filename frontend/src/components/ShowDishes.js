@@ -8,12 +8,12 @@ import Toast from 'react-hot-toast'
 
 const ShowDishes = () => {
   const [dishes, setDishes] = useState([])
-  const [loading, setLoading] = useState(true)
-  const navigate = useNavigate()
-  const [votingInProcess, setVotingInProcess] = useState(false)
   const [rank1, setRank1] = useState(null)
   const [rank2, setRank2] = useState(null)
   const [rank3, setRank3] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [votingInProcess, setVotingInProcess] = useState(false)
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchDishes = async () => {
@@ -114,7 +114,7 @@ const ShowDishes = () => {
 
   return (
     <>
-      <Link to={'/'} className={styles.backBtn}>
+      <Link to={'/dashboard'} className={styles.backBtn}>
         {'< '}Back
       </Link>
       <DishWrapper>
