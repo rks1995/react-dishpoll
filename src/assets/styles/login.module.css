@@ -1,3 +1,9 @@
+.loginForm {
+  background-color: #2b4865;
+  padding: 1em;
+  border-radius: 1em;
+}
+
 .inputField,
 .loginBtn {
   width: 100%;

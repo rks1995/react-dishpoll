@@ -43,31 +43,33 @@ const Login = () => {
 
   return (
     <LoginWrapper>
-      <div style={headerStyle.flex}>
-        <img
-          src='https://cdn-icons-png.flaticon.com/512/3580/3580168.png'
-          alt=''
-          width={30}
+      <div className={styles.loginForm}>
+        <div style={headerStyle.flex}>
+          <img
+            src='https://cdn-icons-png.flaticon.com/512/3580/3580168.png'
+            alt=''
+            width={30}
+          />
+          <h3>Login</h3>
+        </div>
+        <input
+          className={styles.inputField}
+          type='text'
+          placeholder='User Name'
+          {...userName}
+          required
         />
-        <h3>Login</h3>
+        <input
+          className={styles.inputField}
+          type='password'
+          placeholder='Password'
+          {...password}
+          required
+        />
+        <button className={styles.loginBtn} onClick={login}>
+          {isLoggedIn ? 'Login in...' : 'Login'}
+        </button>
       </div>
-      <input
-        className={styles.inputField}
-        type='text'
-        placeholder='User Name'
-        {...userName}
-        required
-      />
-      <input
-        className={styles.inputField}
-        type='password'
-        placeholder='Password'
-        {...password}
-        required
-      />
-      <button className={styles.loginBtn} onClick={login}>
-        {isLoggedIn ? 'Login in...' : 'Login'}
-      </button>
     </LoginWrapper>
   )
 }

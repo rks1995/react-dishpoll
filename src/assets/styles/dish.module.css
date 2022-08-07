@@ -39,6 +39,7 @@ button {
 
 @media screen and (max-width: 900px) {
   .backBtn {
+    top: 2em;
     left: 1em;
   }
 }

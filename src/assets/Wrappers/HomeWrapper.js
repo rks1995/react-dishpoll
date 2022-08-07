@@ -6,4 +6,7 @@ export const HomeWrapper = styled.div`
   width: 50%;
   margin: 5em auto;
   padding: 2em;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 `
