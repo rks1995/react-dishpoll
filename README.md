@@ -2,7 +2,7 @@
 
 # App is Live
 
-preview -
+preview - https://dishpollrks.netlify.app/
 
 ## App Description
 
