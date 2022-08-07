@@ -78,22 +78,31 @@ const ShowDishes = () => {
   }
 
   // polling dish function
-  function updateItem(index, val) {
+  function updateItem(id, val) {
     let arr = JSON.parse(localStorage.getItem('itemList'))
-    if (arr[index]?.points) {
-      arr[index].points += val
-    } else arr[index].points = val
+    let newItemList = arr.map((item) => {
+      if (item.id === id) {
+        if (item?.points) {
+          item.points += val
+        } else item.points = val
+      } else {
+        if (!item?.points) item.points = 0
+      }
+      return item
+    })
 
-    localStorage.setItem('itemList', JSON.stringify(arr))
-    console.log(arr[index])
+    newItemList.sort((a, b) => {
+      return parseFloat(b.points) - parseFloat(a.points)
+    })
+    localStorage.setItem('itemList', JSON.stringify(newItemList))
   }
 
   // handle vote button for polling
   const handleVote = () => {
     setVotingInProcess(true)
-    updateItem(rank1 - 1, 30)
-    updateItem(rank2 - 1, 20)
-    updateItem(rank3 - 1, 10)
+    updateItem(rank1, 30)
+    updateItem(rank2, 20)
+    updateItem(rank3, 10)
     setTimeout(() => {
       setVotingInProcess(false)
       Toast.success('Request successfull!', {

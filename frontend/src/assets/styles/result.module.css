@@ -1,0 +1,13 @@
+.topThree,
+.others {
+  display: grid;
+  place-items: center;
+}
+
+table {
+  margin: 20px 0;
+}
+table th,
+table td {
+  padding: 1em;
+}
